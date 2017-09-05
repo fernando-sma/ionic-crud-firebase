@@ -10,13 +10,13 @@
 
 <ion-item>
 <ion-label floating>Nome</ion-label>
-<ion-input type="file" [(ngModel)] = "item.itemName"></ion-input>
+<ion-input type="text" [(ngModel)] = "item.itemName" aria-required=""></ion-input>
 </ion-item>
 
 
 <ion-item>
     <ion-label floating>Numero de telefone</ion-label>
-    <ion-input type="number" [(ngModel)] = "item.itemNumber"></ion-input>
+    <ion-input type="number" [(ngModel)] = "item.itemNumber" aria-required=""></ion-input>
     </ion-item>
 
     <button ion-button block (click)= "salvar(item)">Salvar</button>
