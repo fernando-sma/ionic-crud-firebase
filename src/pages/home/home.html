@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Listar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+<ion-buttons end>
+  <button>
+    <ion-icon name = "contact"></ion-icon>
+  </button>
+</ion-buttons>
+
+<ion-list>
+
+<ion-item *ngFor = "let item of listRef$ | async" (click) = "opcao(item)">
+    <h2> Nome: {{item.itemName}}</h2> 
+    <h4> numero: {{item.itemNumber}} </h4>
+</ion-item>
+
+</ion-list>
+
+</ion-content>
